@@ -88,7 +88,8 @@ $(document).ready(function() {
       // правило-объект (блок)
       userQuestion: {
         required: true,
-        minlength: 2
+        minlength: 2,
+        maxlength: 40
       }
     }, // сообщения
       messages: {
@@ -104,7 +105,8 @@ $(document).ready(function() {
         },
         userQuestion: {
           required: "Укажите свой вопрос",
-          minlength: "Что вы хотите узнать"
+          minlength: "Что вы хотите узнать",
+          maxlength: "Вопрос не должен привышеть 40 символов"
         }
       }
   });
