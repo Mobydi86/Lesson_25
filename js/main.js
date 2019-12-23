@@ -42,7 +42,11 @@ $(document).ready(function() {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 18
+      },
       // правило-объект (блок)
       userEmail: {
         required: true,
@@ -55,7 +59,11 @@ $(document).ready(function() {
           minlength: "Слишком короткое имя",
           maxlength: "Имя не должно превышать 15 символов"
         },
-        userPhone: "Телефон обязателен",
+        userPhone: { 
+          required: "Телефон обязателен",
+          minlength: "Слишком короткий номор",
+          maxlength: "Номер не должен быть больше 11 символов"
+        },
         userEmail: {
           required: "Обязательно укажите email",
           email: "Введите в формате name@domain.com"
@@ -72,7 +80,11 @@ $(document).ready(function() {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 18
+      },
       // правило-объект (блок)
       userQuestion: {
         required: true,
@@ -85,7 +97,11 @@ $(document).ready(function() {
           minlength: "Слишком короткое имя",
           maxlength: "Имя не должно превышать 15 символов"
         },
-        userPhone: "Телефон обязателен",
+        userPhone: { 
+          required: "Телефон обязателен",
+          minlength: "Слишком короткий номор",
+          maxlength: "Номер не должен быть больше 11 символов"
+        },
         userQuestion: {
           required: "Укажите свой вопрос",
           minlength: "Что вы хотите узнать"
@@ -102,7 +118,11 @@ $(document).ready(function() {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required"
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 18
+      },
       // правило-объект (блок)
     }, // сообщения
       messages: {
@@ -111,7 +131,11 @@ $(document).ready(function() {
           minlength: "Слишком короткое имя",
           maxlength: "Имя не должно превышать 15 символов"
         },
-        userPhone: "Телефон обязателен",
+        userPhone: { 
+          required: "Телефон обязателен",
+          minlength: "Слишком короткий номор",
+          maxlength: "Номер не должен быть больше 11 символов"
+        },
       }
   });
 
