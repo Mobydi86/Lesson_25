@@ -1081,8 +1081,8 @@ img {
     .footer__map {
       order: -1;
       margin-bottom: -1.6rem; }
-      .footer__map iframe {
-        height: 18rem; }
+      .footer__map ymaps {
+        max-height: 18rem; }
   .input--dark {
     color: #fff; }
     .input--dark::placeholder {
