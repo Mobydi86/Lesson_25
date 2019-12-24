@@ -868,8 +868,9 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -20rem;
-    margin-bottom: 3.714rem;
-    padding: 2.5rem; }
+    margin-bottom: 1.9rem;
+    padding: 2.5rem;
+    padding-bottom: 0; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -903,6 +904,36 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.28rem 0; }
+  .footer__map {
+    text-align: center;
+    max-width: 66.3rem;
+    width: 100%;
+    max-height: 465px;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 4.6rem; }
+  .footer-title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 2.1rem;
+    text-align: center;
+    color: #E3B873;
+    width: 36.1rem;
+    margin: auto;
+    margin-bottom: 2.2rem;
+    margin-top: 0;
+    background: transparent; }
+    .footer-title__heading {
+      margin-bottom: 1.7rem; }
+    .footer-title__image img {
+      margin: 0 1.2rem 0 -0.4rem; }
+
+.map {
+  display: flex;
+  flex-wrap: wrap; }
 
 .modal {
   opacity: 0;
@@ -1027,6 +1058,12 @@ img {
     width: 100%; } }
 
 @media screen and (max-width: 860px) {
+  .footer__menu {
+    display: none; }
+  .footer__map {
+    order: -1;
+    max-height: 5rem;
+    height: 100%; }
   .input--dark {
     color: #fff; }
     .input--dark::placeholder {
